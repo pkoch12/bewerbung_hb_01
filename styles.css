@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.container {
+    width: 80%; /* Breite reduziert, damit die Seite schmaler ist */
+    max-width: 1000px; /* Maximalbreite reduziert */
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 25px; /* Vergrößerter Abstand */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal; /* Nicht fett */
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 20px 0;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 8px; /* Kleinerer Abstand */
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.five-columns {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    hyphens: auto;
+}
+
+.five-columns .column {
+    flex: 1;
+    margin: 0 10px;
+    text-align: left; /* Links ausgerichtet */
+    hyphens: auto;
+}
+
+.separator-vertical {
+    width: 1px;
+    background: #ccc;
+    margin: 0 10px;
+}
+
+.two-columns {
+    display: flex;
+    padding: 0 20px;
+    hyphens: auto;
+}
+
+.two-columns .left-column {
+    flex: 3.87;
+    hyphens: auto;
+}
+
+.two-columns .right-column {
+    flex: 6.13;
+    hyphens: auto;
+}
+
+.separator {
+    width: 1px;
+    background: #ccc;
+    margin: 0 40px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: Left;
+    padding: 0px 0px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: 0px;
+    flex-wrap: wrap; /* Falls der Inhalt breiter als der Footer ist, sollen die Spalten umgebrochen werden */
+}
+.column3 {
+    flex-grow: 1; /* Jede Spalte wächst, um den verfügbaren Platz im Footer auszufüllen */
+    max-width: calc(100% / 3); /* Maximal 1/3 der Breite des Footers */
+}
+
+section {
+    padding: 20px;
+    padding-top: 0px;
+}
+
+.column3 {
+    flex-basis: 30%; 
+}
+
+a:link {
+    color: #ef7c00;
+   }
+
+/* Java-Script-Style */
+body {
+    font-family: Arial, sans-serif; /* Passt sich an bestehende Fonts an */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.bar-container {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.bar {
+    height: 20px;
+    background-color: #ef7c00;
+    transition: width 0.5s ease-in-out;
+}
+
+.bar-label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding-left: 5px;
+    color: white;
+    display: none;
+}
+
+.bar-container:hover .bar-label {
+    display: block;
+}
